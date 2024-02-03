@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'main/img/logo_champion.svg.jpg' %}" alt="Магазин Champion ">
+        <span class="logo">Магазин Champion</span>
+        <h3>Навігація</h3>
+            <ul>
+                <li> <a href="/"><i class="fas fa-home"></i>Головна</a></li>
+                <li><a href="/about"><i class="fas fa-info-circle"></i>Про нас</a></li>
+                <li><a href=""><i class="fas fa-envelope"></i>Контакти</a></li>
+                <li><a href="/motor"><i class="fas fa-envelope"></i>Мотори</a></li>
+            </ul>
+        <h3>Товари</h3>    
+            <ul>
+                <li><a href="/motor"><i class="fas fa-home"></i>Фільтри</a></li>
+                <li><a href="{% url 'create' %}"><i class="fas fa-envelope"></i>Добавити оголошення </a></li>
+                <li></li>
+            </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

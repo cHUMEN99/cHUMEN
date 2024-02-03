@@ -1,0 +1,19 @@
+
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}CHLENIX{% endblock %}
+
+{% block content %}
+    
+    <div class="alert alert-warning">
+        <h1>{{article.title}}
+        <p>{{article.haracter}}</p>
+        {% if el.image %}
+            <img src="{{ article.image.url }}" >
+        {% else %}
+            <p>No image available</p>
+        {% endif %}
+    </div>
+
+      
+{% endblock %}

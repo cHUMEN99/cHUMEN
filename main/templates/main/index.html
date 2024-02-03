@@ -1,0 +1,24 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %}Головна сторінка магазина Champion{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <div class="features">
+        <h1>Головна сторінка магазина Champion</h1>
+        <p>Це просто приклад тексту для перевірки виведення.</p>
+        <button class="btn btn-warning">Купити</button>
+       
+        <button class="btn btn-warning">Продати!</button>
+        <img src="{% static 'main/img/logo_champion.svg.jpg' %}" alt="Магазин Champion" width="5%" height="5%">                        
+    </div>
+    {% load static %}
+    <div class="catalog">
+        <ul>
+            <li><a href=""><i class="fas fa-envelope"></i>Запчасті  </a></li>
+            <li><a href="/motor"><i class="fas fa-envelope"></i>Мотори  </a></li>
+            <li><a href="/motor"><i class="fas fa-envelope"></i>Масла  </a></li>
+            
+        </ul>
+{% endblock %}

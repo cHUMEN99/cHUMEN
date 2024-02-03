@@ -1,0 +1,25 @@
+
+{% extends 'main/layout.html' %}
+
+{% block title %}CHLENIX{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <div class="features">
+        <h1>оголошення</h1>     
+        {% for el in news %}
+           <div class="alert alert-warning">
+                <h3>{{el.title}}</h3>    
+                <p>{{el.anons}}</p>  
+                <p>{{el.haracter}}</p>
+                
+                {% if el.image %}
+                    <img src="{{ article.image.url }}" alt="fd" >
+                {% else %}
+                    <p>No image available</p>
+                {% endif %}
+           </div>
+           {% endfor %}  
+        </ul>
+    </div>    
+{% endblock %}

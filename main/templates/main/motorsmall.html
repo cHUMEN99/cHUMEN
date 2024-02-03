@@ -1,0 +1,57 @@
+{% extends 'main/layout.html' %}
+{% block title %}Мотор BMW V6 E34{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <style>
+        .center-container {
+    text-align: left;
+}
+
+
+.center-content {
+    display: inline-block;
+}
+.center-container1 {
+    text-align: right;
+    margin-top: -360px;
+    margin-right: 200px;
+    color: black;
+}
+.center-content1 {
+    display: inline-block;
+}
+.center-content img {
+    width: 120%; /* Змініть це значення залежно від вашого вибору */
+}
+.btn {
+background-color: gray; /* видаляє заливку */
+padding: 20px 60px; /* додає відступ */
+color: white; /* колір тексту */
+display: inline-block;
+border: 1px solid black; /* можна додати рамку для відмежування */
+border-radius: 5px; /* закруглені кути */
+word-spacing: 55px; /* відступ між словами */
+}
+    </style>
+    
+
+    <div class="center-container" style="margin-left: 20px;">
+        <h1>Мотор BMW V6 E34</h1>
+        <div class="center-content">
+            <img src="{% static 'main/img/завантаженняя.jpg.jpg' %}" alt="Магазин Champion">
+            <h1>Мотор BMW </h1>
+            <p>Мотор V6 зі старої хуйні ніц не їде</p>
+           
+        </div>
+    <div class="center-container1"style="font-weight: bold;">
+            <h1>Характеристики</h1>
+            <div class="center-content1">
+                <p>Виробник:BMW</p>
+                <p>Мотор V6 зі старої хуйні ніц не їде</p>
+                <p>Ціна 1299 грн.</p>
+                <button class="btn btn-warning">1299грн     Купити!</button>
+                
+            </div>    
+    </div>
+{% endblock %}

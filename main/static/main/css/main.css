@@ -1,0 +1,159 @@
+body {
+    background: #fff;
+}
+
+aside {
+
+   
+    float: left;
+    background:#800000;
+    width: 25%;
+    padding: 2.5%;
+    height: 100vh; 
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    text-align: left;
+    
+
+}
+
+
+aside img {
+    width: 100px;
+    float: left;
+    
+}
+aside .logo{
+    font-size: 40px;
+    margin-left: 0px; ;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    
+}
+
+aside ul {
+    list-style: none
+}
+aside ul li{
+    list-style: none;
+    color: #fff ;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover,aside ul a:hover{
+    color: #FF0000;
+    text-decoration: none;
+    transform: scale(1.1);
+
+}
+
+main .features {
+    float: left;
+    color: #4d4d4d ;
+    margin-top: 0px;
+    text-align: center;
+    width: calc(75% - 2.5%); 
+    padding: 2.5%;
+    box-sizing: border-box; 
+   
+}
+main .catalog ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.catalog ul li a{
+    float: left;
+    color: #4d4d4d ;
+    margin-top: 2px;
+    text-align: left;
+    text-decoration: none;
+    transition: color .6s ease;
+
+}
+main .catalog ul li a:hover {
+    color: #FF0000;
+    transform: scale(1.05);
+}
+main .catalog a{
+    margin: 0px 45px;
+
+}
+aside .logo1{
+    font-size: 40px;
+    margin-left: 0px; ;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    box-sizing: border-box; 
+    
+}
+.catalog-second ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.catalog-second ul li a{
+    float: left;
+    color: #4d4d4d ;
+    margin-top: 2px;
+    text-align: left;
+    text-decoration: none;
+    transition: color .6s ease;
+
+}
+.catalog-second ul li a:hover {
+    color: #FF0000;
+    transform: scale(1.05);
+}
+.center-container {
+    text-align: left;
+}
+
+
+.center-content {
+    display: inline-block;
+}
+.center-container1 {
+    text-align: right;
+    margin-top: -360px;
+    margin-right: 200px;
+    color: black;
+}
+.center-content1 {
+    display: inline-block;
+}
+.center-content img {
+    width: 120%; /* Змініть це значення залежно від вашого вибору */
+}
+.btn {
+background-color: gray; /* видаляє заливку */
+padding: 20px 60px; /* додає відступ */
+color: white; /* колір тексту */
+display: inline-block;
+border: 1px solid black; /* можна додати рамку для відмежування */
+border-radius: 5px; /* закруглені кути */
+word-spacing: 55px; /* відступ між словами */
+}
+form {
+    margin-left:32% ;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.alert-warning{
+    float: left;
+    width: 200px;
+    margin: 20px 34%;
+    clear: both;
+    text-align: left;
+    margin-left: 10%;
+}
+
+
+
+
+

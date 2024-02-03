@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Моторна сторінка магазина Champion{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <h1>Моторна сторінка магазина Champion</h1>
+    <p>Наступна сторінка магазина Champion</p>
+    <img src="{% static 'main/img/logo_champion.svg.jpg' %}" alt="Магазин Champion" style="width: 5%; height: 5%; margin-left: 100px; display: inline-block;"> 
+    <img src="{% static 'main/img/завантаженняя.jpg.jpg' %}" alt="Магазин Champion" style="width: 5%; height: 5%; margin-left: 300px; display: inline-block;"> 
+    <div class="catalog" style="display: block;">
+        <ul>
+            <li><a   href="/"><i class="fas fa-envelope"></i>Мотор маленький  </a></li>
+            <li><a href="/motorsmall" style="margin-left: 200px;" href="/"><i class="fas fa-envelope"></i>Мотор маленький BMW  </a></li>
+            <li><a   href="/motorsmall"><i class="fas fa-envelope"></i>Мотор маленький 2 </a></li>
+                
+        </ul>
+    </div>
+    <div class="catalog-second" style="display: block;margin-top: 50px;">
+        <ul>
+            <li><a   href="/"><i class="fas fa-envelope"></i>Мотор маленький </a></li>
+            
+        </ul>
+    </div>
+    
+{% endblock %}
